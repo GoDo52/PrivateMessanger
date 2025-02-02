@@ -3,7 +3,27 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrivateMessanger", "PrivateMessanger\PrivateMessanger.csproj", "{9941AB51-A4C0-4694-BD53-DE901ABD2FAC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrivateMessangerWeb", "PrivateMessanger\PrivateMessangerWeb.csproj", "{9941AB51-A4C0-4694-BD53-DE901ABD2FAC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{05F80E27-E7CD-4417-A519-92C25F9AB0DE} = {05F80E27-E7CD-4417-A519-92C25F9AB0DE}
+		{1FC11E67-1897-43E9-B19A-48C363FEAD96} = {1FC11E67-1897-43E9-B19A-48C363FEAD96}
+		{AA54B6C7-E7E0-4281-8921-6BA7E575E9C5} = {AA54B6C7-E7E0-4281-8921-6BA7E575E9C5}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrivateMessanger.DataAccess", "PrivateMessanger.DataAccess\PrivateMessanger.DataAccess.csproj", "{1FC11E67-1897-43E9-B19A-48C363FEAD96}"
+	ProjectSection(ProjectDependencies) = postProject
+		{05F80E27-E7CD-4417-A519-92C25F9AB0DE} = {05F80E27-E7CD-4417-A519-92C25F9AB0DE}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrivateMessanger.Models", "PrivateMessanger.Models\PrivateMessanger.Models.csproj", "{05F80E27-E7CD-4417-A519-92C25F9AB0DE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrivateMessanger.Services", "PrivateMessanger.Services\PrivateMessanger.Services.csproj", "{AA54B6C7-E7E0-4281-8921-6BA7E575E9C5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrivateMessanger.Utility", "PrivateMessanger.Utility\PrivateMessanger.Utility.csproj", "{ADDDDA36-0A5D-4768-B2FB-A71D4D9CA52D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrivateMessanger.DTOs", "PrivateMessanger.DTOs\PrivateMessanger.DTOs.csproj", "{132B1FE3-EA56-40F1-AD7A-FF50926E9B91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrivateMessangerAPI", "PrivateMessangerAPI\PrivateMessangerAPI.csproj", "{6F3DDA71-5C81-42E2-836B-60A9946E253A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +35,30 @@ Global
 		{9941AB51-A4C0-4694-BD53-DE901ABD2FAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9941AB51-A4C0-4694-BD53-DE901ABD2FAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9941AB51-A4C0-4694-BD53-DE901ABD2FAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FC11E67-1897-43E9-B19A-48C363FEAD96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FC11E67-1897-43E9-B19A-48C363FEAD96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FC11E67-1897-43E9-B19A-48C363FEAD96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FC11E67-1897-43E9-B19A-48C363FEAD96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05F80E27-E7CD-4417-A519-92C25F9AB0DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05F80E27-E7CD-4417-A519-92C25F9AB0DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05F80E27-E7CD-4417-A519-92C25F9AB0DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05F80E27-E7CD-4417-A519-92C25F9AB0DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA54B6C7-E7E0-4281-8921-6BA7E575E9C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA54B6C7-E7E0-4281-8921-6BA7E575E9C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA54B6C7-E7E0-4281-8921-6BA7E575E9C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA54B6C7-E7E0-4281-8921-6BA7E575E9C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADDDDA36-0A5D-4768-B2FB-A71D4D9CA52D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADDDDA36-0A5D-4768-B2FB-A71D4D9CA52D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADDDDA36-0A5D-4768-B2FB-A71D4D9CA52D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADDDDA36-0A5D-4768-B2FB-A71D4D9CA52D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{132B1FE3-EA56-40F1-AD7A-FF50926E9B91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{132B1FE3-EA56-40F1-AD7A-FF50926E9B91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{132B1FE3-EA56-40F1-AD7A-FF50926E9B91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{132B1FE3-EA56-40F1-AD7A-FF50926E9B91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F3DDA71-5C81-42E2-836B-60A9946E253A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F3DDA71-5C81-42E2-836B-60A9946E253A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F3DDA71-5C81-42E2-836B-60A9946E253A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F3DDA71-5C81-42E2-836B-60A9946E253A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
