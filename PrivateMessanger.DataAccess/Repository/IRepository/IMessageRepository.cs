@@ -10,6 +10,6 @@ namespace PrivateMessanger.DataAccess.Repository.IRepository
 {
     public interface IMessageRepository : IRepository<Message>
     {
-        void Update(Message message);
+        Task UpdateAsync(Message message);
     }
 }

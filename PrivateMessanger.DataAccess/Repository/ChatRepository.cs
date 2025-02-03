@@ -19,7 +19,7 @@ namespace PrivateMessanger.DataAccess.Repository
             _db = db;
         }
 
-        public void Update(Chat chat)
+        public async Task UpdateAsync(Chat chat)
         {
             _db.Chats.Update(chat);
             // here update only necessary info, implement later

@@ -19,7 +19,7 @@ namespace PrivateMessanger.DataAccess.Repository
             _db = db;
         }
 
-        public void Update(Message message)
+        public async Task UpdateAsync(Message message)
         {
             _db.Messages.Update(message);
             // Update only text or relevant info that is being updated

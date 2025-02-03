@@ -9,6 +9,6 @@ namespace PrivateMessanger.DataAccess.Repository.IRepository
 {
     public interface IChatRepository : IRepository<Chat>
     {
-        void Update(Chat chat);
+        Task UpdateAsync(Chat chat);
     }
 }

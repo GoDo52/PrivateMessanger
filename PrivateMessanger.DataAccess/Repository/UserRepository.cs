@@ -34,7 +34,7 @@ namespace PrivateMessanger.DataAccess.Repository
             }
         }
 
-        public async Task Update(User user)
+        public async Task UpdateAsync(User user)
         {
             var userFromDb = await _db.Users.FirstOrDefaultAsync(s => s.Id == user.Id);
 

@@ -53,7 +53,7 @@ namespace PrivateMessengerWeb.Controllers
                 return Unauthorized("Your account is pending admin approval.");
 
             var token = _authService.GenerateJwtToken(user);
-            return Ok(new { token });
+            return Ok(new { message = "Login successful!", token });
         }
     }
 }
