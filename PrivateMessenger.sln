@@ -3,27 +3,27 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrivateMessengerWeb", "PrivateMessanger\PrivateMessengerWeb.csproj", "{9941AB51-A4C0-4694-BD53-DE901ABD2FAC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrivateMessengerWeb", "PrivateMessengerWeb\PrivateMessengerWeb.csproj", "{9941AB51-A4C0-4694-BD53-DE901ABD2FAC}"
 	ProjectSection(ProjectDependencies) = postProject
 		{05F80E27-E7CD-4417-A519-92C25F9AB0DE} = {05F80E27-E7CD-4417-A519-92C25F9AB0DE}
 		{1FC11E67-1897-43E9-B19A-48C363FEAD96} = {1FC11E67-1897-43E9-B19A-48C363FEAD96}
 		{AA54B6C7-E7E0-4281-8921-6BA7E575E9C5} = {AA54B6C7-E7E0-4281-8921-6BA7E575E9C5}
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrivateMessenger.DataAccess", "PrivateMessanger.DataAccess\PrivateMessenger.DataAccess.csproj", "{1FC11E67-1897-43E9-B19A-48C363FEAD96}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrivateMessenger.DataAccess", "PrivateMessenger.DataAccess\PrivateMessenger.DataAccess.csproj", "{1FC11E67-1897-43E9-B19A-48C363FEAD96}"
 	ProjectSection(ProjectDependencies) = postProject
 		{05F80E27-E7CD-4417-A519-92C25F9AB0DE} = {05F80E27-E7CD-4417-A519-92C25F9AB0DE}
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrivateMessenger.Models", "PrivateMessanger.Models\PrivateMessenger.Models.csproj", "{05F80E27-E7CD-4417-A519-92C25F9AB0DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrivateMessenger.Models", "PrivateMessenger.Models\PrivateMessenger.Models.csproj", "{05F80E27-E7CD-4417-A519-92C25F9AB0DE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrivateMessenger.Services", "PrivateMessanger.Services\PrivateMessenger.Services.csproj", "{AA54B6C7-E7E0-4281-8921-6BA7E575E9C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrivateMessenger.Services", "PrivateMessenger.Services\PrivateMessenger.Services.csproj", "{AA54B6C7-E7E0-4281-8921-6BA7E575E9C5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrivateMessenger.Utility", "PrivateMessanger.Utility\PrivateMessenger.Utility.csproj", "{ADDDDA36-0A5D-4768-B2FB-A71D4D9CA52D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrivateMessenger.Utility", "PrivateMessenger.Utility\PrivateMessenger.Utility.csproj", "{ADDDDA36-0A5D-4768-B2FB-A71D4D9CA52D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrivateMessenger.DTOs", "PrivateMessanger.DTOs\PrivateMessenger.DTOs.csproj", "{132B1FE3-EA56-40F1-AD7A-FF50926E9B91}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrivateMessenger.DTOs", "PrivateMessenger.DTOs\PrivateMessenger.DTOs.csproj", "{132B1FE3-EA56-40F1-AD7A-FF50926E9B91}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrivateMessengerAPI", "PrivateMessangerAPI\PrivateMessengerAPI.csproj", "{6F3DDA71-5C81-42E2-836B-60A9946E253A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrivateMessengerAPI", "PrivateMessengerAPI\PrivateMessengerAPI.csproj", "{6F3DDA71-5C81-42E2-836B-60A9946E253A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
