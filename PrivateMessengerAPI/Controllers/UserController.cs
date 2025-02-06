@@ -19,7 +19,7 @@ namespace PrivateMessengerAPI.Controllers
             _currentUserService = currentUserService;
         }
 
-        [Authorize(Roles = "Admin,SuperAdmin")]
+        [Authorize(Roles = "Manager,Administrator")]
         [HttpGet]
         public async Task<IActionResult> GetAllUsers()
         {
@@ -40,7 +40,7 @@ namespace PrivateMessengerAPI.Controllers
             return Ok(user);
         }
 
-        [Authorize(Roles = "SuperAdmin")]
+        [Authorize(Roles = "Administrator")]
         [HttpPost]
         public async Task<IActionResult> CreateUser([FromBody] User user)
         {
@@ -68,7 +68,7 @@ namespace PrivateMessengerAPI.Controllers
             return NoContent();
         }
 
-        [Authorize(Roles = "SuperAdmin")]
+        [Authorize(Roles = "Administrator")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteUser(int id)
         {

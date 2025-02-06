@@ -45,7 +45,7 @@ namespace PrivateMessengerWeb.Controllers
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] UserLoginDto request)
         {
-            var user = await _unitOfWork.User.GetAsync(u => u.Tag == request.Tag);
+            var user = await _unitOfWork.User.GetAsync(u => u.Tag == request.Tag, includeProperties: "AdministrationRole");
             if (user == null || !_authService.VerifyPassword(request.Password, user.PasswordHash))
                 return Unauthorized("Invalid credentials");
 

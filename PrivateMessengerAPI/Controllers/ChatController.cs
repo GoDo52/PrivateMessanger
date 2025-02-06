@@ -67,7 +67,7 @@ namespace PrivateMessengerAPI.Controllers
             return NoContent();
         }
 
-        [Authorize(Roles = "SuperAdmin")]
+        [Authorize(Roles = "Administrator")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteChat(int id)
         { 

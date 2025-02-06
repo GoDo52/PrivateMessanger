@@ -87,7 +87,7 @@ namespace PrivateMessengerAPI.Controllers
             return Ok(usersInChat);
         }
 
-        [Authorize(Roles = ("Admin,SuperAdmin"))]
+        [Authorize(Roles = ("Manager,Administrator"))]
         [HttpGet("user/{userId}/chats")]
         public async Task<IActionResult> GetChatsForUser(int userId)
         {

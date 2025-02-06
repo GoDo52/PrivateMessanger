@@ -19,7 +19,7 @@ namespace PrivateMessengerAPI.Controllers
             _currentUserService = currentUserService;
         }
 
-        [Authorize(Roles = ("SuperAdmin"))]
+        [Authorize(Roles = ("Administrator"))]
         [HttpGet]
         public async Task<IActionResult> GetAllMessages()
         {

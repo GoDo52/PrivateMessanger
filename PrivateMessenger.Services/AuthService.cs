@@ -37,13 +37,15 @@ namespace PrivateMessenger.Services
         public string GenerateJwtToken(User user)
         {
             var key = Encoding.UTF8.GetBytes(_config["JwtSettings:Secret"]);
+            Console.WriteLine(key);
             var tokenHandler = new JwtSecurityTokenHandler();
 
             var claims = new[]
             {
                 new Claim(JwtRegisteredClaimNames.Sub, user.Id.ToString()),
                 new Claim(JwtRegisteredClaimNames.UniqueName, user.Tag),
-                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
+                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+                new Claim(ClaimTypes.Role, user.AdministrationRole.Name ?? "User")
             };
 
             var tokenDescriptor = new SecurityTokenDescriptor
